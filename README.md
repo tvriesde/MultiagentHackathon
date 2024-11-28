@@ -18,14 +18,19 @@ To get a copy of the code, you can either fork the repository, download it as a 
 ## Clone with Git
 
 1. Open your terminal.
-2. Choose an appropriate top-level directory (e.g. C:\Users\&lt;you&gt;\mycode)
-3. Create this top-level directory and navigate to it
-5. Run the following command:
+2. Choose an appropriate top-level directory (e.g. C:\Users\\<you\>\mycode)
+3. Create this top-level directory (`code` in above example) and navigate to it
+from the command line
+4. Run the following command:
 
     ```sh
     git clone <repository-url>
     ```
 
-Replace `<repository-url>` with the URL you copied.
+Replace `<repository-url>` with the URL you copied (either this repo or yours 
+if you forked it).
 
 That's it! You now have a copy of the code.
+
+## Important:
+* Right-click the <code>MultiagentHackthon</code> 
