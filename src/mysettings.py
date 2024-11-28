@@ -19,7 +19,7 @@ llm_config = {"config_list": [
 
 llm_websurfer = {
     "temperature": 0,
-    "cache-seed": None,
+    "cache_seed": None,
     "config_list": [
         {
             "model": "gpt-4o",
@@ -35,24 +35,24 @@ llm_websurfer = {
 
 browser_config = {
     "viewport_size": 4096,
-    "bing_api_key": os.environ.get(bing_api_key_name, None),
+    "bing_api_key": os.environ.get(bing_api_key_name),
 }
 
 generated_directory = "./generated"
 
-if browser_config.get(bing_api_key_name) is None:
+if os.environ.get(bing_api_key_name) is None:
     print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
     print("WARNING: Bing API key not found. Some examples won't work.")
     print(f"Set the environment variable {bing_api_key_name}")
     print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
-if llm_config.get("azure_openai_api_key_name") is None:
+if os.environ.get(azure_openai_api_key_name) is None:
     print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
     print("WARNING: Azure OpenAI API key not found. None of the examples will work.")
     print(f"Set the environment variable {azure_openai_api_key_name}")
     print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
-if llm_config.get(azure_openai_url_name) is None:
+if os.environ.get(azure_openai_url_name) is None:
     print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
     print("WARNING: Azure OpenAI API URL not found. None of the examples will work.")
     print(f"Set the environment variable {azure_openai_url_name}")
