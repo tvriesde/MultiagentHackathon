@@ -33,4 +33,10 @@ if you forked it).
 That's it! You now have a copy of the code.
 
 ## Important:
-* Right-click the <code>MultiagentHackthon</code> 
+* Right-click the <code>MultiagentHackthon</code> folder and open in VS Code
+* Within VS Code, open the folder in devcontainer when prompted
+* This will take many minutes while the docker image and dependencies are
+downloaded (one time)
+* Once the devcontainer opens, ***don't*** create a Python virtual 
+environment/Conda if prompted, just close that window (we are already in a
+virtual environment with devcontainers)
