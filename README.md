@@ -18,7 +18,7 @@ To get a copy of the code, you can either fork the repository, download it as a 
 ## Clone with Git
 
 1. Open your terminal.
-2. Choose an appropriate top-level directory (e.g. C:\Users\\<you>\mycode)
+2. Choose an appropriate top-level directory (e.g. C:\Users\&lt;you&gt;\mycode)
 3. Create this top-level directory and navigate to it
 5. Run the following command:
 
