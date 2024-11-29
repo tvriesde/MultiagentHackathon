@@ -1,8 +1,12 @@
 import os
 
+from dotenv import load_dotenv
+
 azure_openai_api_key_name = "AZURE_OPENAI_API_KEY"
 azure_openai_url_name = "AZURE_OPENAI_URL"
 bing_api_key_name = "BING_API_KEY"
+
+load_dotenv()
 
 llm_config = {"config_list": [
     {
